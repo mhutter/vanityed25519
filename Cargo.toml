@@ -6,5 +6,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rand = "0.8.5"
-ssh-key = { version = "0.6.4", default-features = false, features = ["alloc", "ed25519"] }
+rand = "0.8"
+ssh-key = { version = "0.6", default-features = false, features = ["alloc", "ed25519"] }
