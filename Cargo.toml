@@ -8,3 +8,11 @@ edition = "2021"
 [dependencies]
 rand = "0.8"
 ssh-key = { version = "0.6", default-features = false, features = ["alloc", "ed25519"] }
+
+[profile.release]
+codegen-units = 1
+debug = "none"
+lto = true
+opt-level = 3
+panic = "abort"
+strip = true
